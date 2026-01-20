@@ -1,0 +1,38 @@
+manifestVersion: 1
+id: simon-tlsu
+name: TLSU
+tagline: Add TLS to your Umbrel apps
+icon: https://raw.githubusercontent.com/simonhaas/simons-umbrel-app-gallery/main/simon-tlsu/logo.png
+category: networking
+version: "0.1.0"
+#port: 4000
+description: >-
+  With TLSU you can easily add TLS to your Umbrel apps.
+
+
+  https://umbrel.tlsu.site
+
+
+  All your traffic stays local and secure, just a bit of DNS sorcery.
+
+
+  Apps are accessible via a subdomain of tlsu.site (e.g. umbrel.tlsu.site and tlsu.tlsu.site) and secured with a valid TLS certificate from Let's Encrypt.
+
+
+  https://tlsu.tlsu.site  
+developer: Simon Haas
+website: https://umbrel.com
+submitter: Simon Haas
+submission: https://github.com/SimonHaas/simons-umbrel-app-store/tree/main/simon-tlsu
+repo: https://github.com/SimonHaas/tlsu
+support: https://github.com/SimonHaas/tlsu/issues
+# gallery:
+#   - https://i.imgur.com/yyVG0Jb.jpeg
+#   - https://i.imgur.com/yyVG0Jb.jpeg
+#   - https://i.imgur.com/yyVG0Jb.jpeg
+releaseNotes: >-
+  Proof of concept.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
