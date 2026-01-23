@@ -5,7 +5,7 @@ tagline: Add TLS to your Umbrel apps
 icon: https://raw.githubusercontent.com/simonhaas/simons-umbrel-app-gallery/main/simon-tlsu/logo.png
 category: networking
 version: "0.1.0"
-#port: 4000
+port: 4000
 description: >-
   With TLSU you can easily add TLS to your Umbrel apps.
 
