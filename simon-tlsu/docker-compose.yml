@@ -6,7 +6,7 @@ services:
      APP_PORT: 8080
     
   traefik:
-    image: traefik:v3.6 # TODO custom image with umbrel plugin baked in
+    image: ghcr.io/simonhaas/tlsu/traefik:main
     command:
       - --log.level=DEBUG
       - --api.insecure=true
@@ -42,7 +42,7 @@ services:
     restart: unless-stopped
 
   umbrel-auth:
-    image: ghcr.io/simonhaas/tlsu/umbrel-app-auth:latest
+    image: ghcr.io/simonhaas/tlsu/umbrel-auth:main
     #build: 
     #  context: ./umbrel/containers/app-auth
     #  dockerfile: Dockerfile.dev
