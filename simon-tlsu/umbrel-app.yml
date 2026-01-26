@@ -26,10 +26,10 @@ submitter: Simon Haas
 submission: https://github.com/SimonHaas/simons-umbrel-app-store/tree/main/simon-tlsu
 repo: https://github.com/SimonHaas/tlsu
 support: https://github.com/SimonHaas/tlsu/issues
-# gallery:
-#   - https://i.imgur.com/yyVG0Jb.jpeg
-#   - https://i.imgur.com/yyVG0Jb.jpeg
-#   - https://i.imgur.com/yyVG0Jb.jpeg
+gallery:
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
 releaseNotes: >-
   Proof of concept.
 dependencies: []

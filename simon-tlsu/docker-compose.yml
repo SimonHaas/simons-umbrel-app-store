@@ -6,7 +6,7 @@ services:
      APP_PORT: 8080
     
   traefik:
-    image: traefik:v3.6
+    image: traefik:v3.6 # TODO custom image with umbrel plugin baked in
     command:
       - --log.level=DEBUG
       - --api.insecure=true
@@ -26,9 +26,9 @@ services:
       #- $TRAEFIK_ADMIN_PORT:8080
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
-      - ${PROJECT_DIR}/certs:/certs:ro
-      - ${PROJECT_DIR}/dynamic/enabled:/etc/traefik/dynamic:ro
-      - ${PROJECT_DIR}/plugins-local:/plugins-local:ro
+      - ${APP_DATA_DIR}/certs:/certs:ro
+      - ${APP_DATA_DIR}/dynamic/enabled:/etc/traefik/dynamic:ro # TODO only for testing, should not be mounted in production
+      #- ${APP_DATA_DIR}/plugins-local:/plugins-local:ro # plugin should be baked into the image
     labels:
       traefik.enable: true
       traefik.http.routers.dashboard.rule: Host(`tlsu.tlsu.site`) && (PathPrefix(`/api`) || PathPrefix(`/dashboard`))
@@ -42,11 +42,12 @@ services:
     restart: unless-stopped
 
   umbrel-auth:
-    build: 
-      context: ./umbrel/containers/app-auth
-      dockerfile: Dockerfile.dev
-    volumes:
-      - ${PROJECT_DIR}/umbrel/containers/app-auth:/app
+    image: ghcr.io/simonhaas/tlsu/umbrel-app-auth:latest
+    #build: 
+    #  context: ./umbrel/containers/app-auth
+    #  dockerfile: Dockerfile.dev
+    #volumes:
+    #  - ${PROJECT_DIR}/umbrel/containers/app-auth:/app
     restart: unless-stopped
     environment:
       UMBREL_AUTH_SECRET: DEADBEEF
