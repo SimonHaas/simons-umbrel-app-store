@@ -7,7 +7,19 @@ category: networking
 version: "0.1.0"
 port: 5555
 description: >-
-  🔍Changedetection is a tool that tracks changes on websites, such as price updates or content revisions. It notifies users of updates via email, Slack, or Discord. With its cloud-based setup, no installation is needed, making it convenient for monitoring multiple pages. Features include custom alerts, JSON/XML tracking for specific content, and restock notifications. It's especially helpful for monitoring products with limited availability or time-sensitive content.
+  With TLSU you can easily add TLS to your Umbrel apps.
+
+
+  https://umbrel.tlsu.site
+
+
+  All your traffic stays local and secure, just a bit of DNS sorcery.
+
+
+  Apps are accessible via a subdomain of tlsu.site (e.g. umbrel.tlsu.site and tlsu.tlsu.site) and secured with a valid TLS certificate from Let's Encrypt.
+
+
+  https://tlsu.tlsu.site
 developer: Simon Haas
 website: https://github.com/SimonHaas/tlsu
 submitter: SimonHaas
