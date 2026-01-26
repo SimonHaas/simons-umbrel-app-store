@@ -1,38 +1,28 @@
 manifestVersion: 1
-id: simon-tlsu
-name: TLSU
-tagline: Add TLS to your Umbrel apps
-icon: https://raw.githubusercontent.com/simonhaas/simons-umbrel-app-gallery/main/simon-tlsu/logo.png
+id: denny-changedetection
+name: Changedetection
+tagline: An easy tool to track website changes and get alerts for updates
+icon: https://raw.githubusercontent.com/dennysubke/dennys-umbrel-app-gallery/main/denny-changedetection/logo.png
 category: networking
-version: "0.1.0"
-port: 8080
+version: "0.49.1"
+port: 5555
 description: >-
-  With TLSU you can easily add TLS to your Umbrel apps.
-
-
-  https://umbrel.tlsu.site
-
-
-  All your traffic stays local and secure, just a bit of DNS sorcery.
-
-
-  Apps are accessible via a subdomain of tlsu.site (e.g. umbrel.tlsu.site and tlsu.tlsu.site) and secured with a valid TLS certificate from Let's Encrypt.
-
-
-  https://tlsu.tlsu.site  
-developer: Simon Haas
-website: https://umbrel.com
-submitter: Simon Haas
-submission: https://github.com/SimonHaas/simons-umbrel-app-store/tree/main/simon-tlsu
-repo: https://github.com/SimonHaas/tlsu
-support: https://github.com/SimonHaas/tlsu/issues
+  🔍Changedetection is a tool that tracks changes on websites, such as price updates or content revisions. It notifies users of updates via email, Slack, or Discord. With its cloud-based setup, no installation is needed, making it convenient for monitoring multiple pages. Features include custom alerts, JSON/XML tracking for specific content, and restock notifications. It's especially helpful for monitoring products with limited availability or time-sensitive content.
+developer: dgtlmoon
+website: https://changedetection.io/
+submitter: dennysubke
+submission: https://github.com/getumbrel/umbrel-apps/pull/
+repo: https://github.com/dgtlmoon/changedetection.io
+support: https://github.com/dgtlmoon/changedetection.io/issues
 gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://raw.githubusercontent.com/dennysubke/dennys-umbrel-app-gallery/main/denny-changedetection/1.jpg
+  - https://raw.githubusercontent.com/dennysubke/dennys-umbrel-app-gallery/main/denny-changedetection/2.jpg
+  - https://raw.githubusercontent.com/dennysubke/dennys-umbrel-app-gallery/main/denny-changedetection/3.jpg
+  - https://raw.githubusercontent.com/dennysubke/dennys-umbrel-app-gallery/main/denny-changedetection/4.jpg
+  - https://raw.githubusercontent.com/dennysubke/dennys-umbrel-app-gallery/main/denny-changedetection/5.jpg
 releaseNotes: >-
-  Proof of concept.
-dependencies: []
+  Version 0.49.1 of Changedetection includes several fixes and improvements, such as fixing custom header parsing, adding Jinja2/browsersteps tests, and supporting multiple semver tags for Docker releases. Additionally, it handles ByteOrderMark in JSON strings and updates Italian translations for the "stock-not-in-stock.js" file.
+dependencies:
 path: ""
 defaultUsername: ""
 defaultPassword: ""
